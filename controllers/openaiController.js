@@ -1,15 +1,15 @@
 const { Configuration, OpenAIApi } = require("openai")
 
 const configuration = new Configuration({
-apiKey: process.env.OPENAI_API_KEY,
+apiKey: process.env.OPEN_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
 const generateImage =async (req,res)=>{
     try {
         const response = await openai.createImage({
-            prompt: 'Polar bear on ice skates',
-            n: 1,
+            prompt:'ronaldo',
+            n:  2,
             size:'512x512'
         })
         const imageUrl = response.data.data[0].url;
@@ -19,8 +19,15 @@ const generateImage =async (req,res)=>{
         })
     } catch (error) {
         if(error.response){
-            console.log()
+            console.log(error.response.status)
+            console.log(error.response.data)
+        }else{
+            console.log(error.message)
         }
+        res.status(400).json({
+            succes:false,
+            error : 'image non telecharger par succes'
+        })
     }
 }
 
