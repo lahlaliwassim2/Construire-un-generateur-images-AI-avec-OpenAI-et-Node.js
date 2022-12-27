@@ -1,0 +1,26 @@
+{
+  "name": "Construire-un-g-n-rateur-d-images-AI-avec-OpenAI-et-Node.js",
+  "version": "1.0.0",
+  "description": "Dans ce projet, nous utiliserons OpenAI et le modèle DALL-E pour créer une application Web qui générera des images à partir de zéro en fonction du texte saisi.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahlaliwassim2/Construire-un-g-n-rateur-d-images-AI-avec-OpenAI-et-Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lahlaliwassim2/Construire-un-g-n-rateur-d-images-AI-avec-OpenAI-et-Node.js/issues"
+  },
+  "homepage": "https://github.com/lahlaliwassim2/Construire-un-g-n-rateur-d-images-AI-avec-OpenAI-et-Node.js#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "openai": "^3.1.0"
+  }
+}
